@@ -2,7 +2,7 @@ const { _saveQuestionAnswer, _saveQuestion } = require("./_DATA");
 describe("_saveQuestionAnswer", () => {
     it("Should return true with correct User", async () => {
         const response = await _saveQuestionAnswer({
-            authedEmployee: "sarahedo",
+            authedEmployee: "anhnm19",
             qid: "8xf0y6ziyjabvozdd253nd",
             answer: "optionOne"
         });
@@ -12,7 +12,7 @@ describe("_saveQuestionAnswer", () => {
 
     it("Should return error with invalid User", async () => {
         const response = await _saveQuestionAnswer({
-            authedEmployee: "sarahedo",
+            authedEmployee: "anhnm19",
             qid: undefined,
             answer: "optionTwo"
         }).catch(e => e);
@@ -28,11 +28,11 @@ describe("_saveQuestion", () => {
                 optionOneText: 'option one test',
                 optionTwoText: 'option two test',
                 author: {
-                    id: 'sarahedo'
+                    id: 'anhnm19'
                 }
             })
 
-            expect(response.author).toBe('sarahedo')
+            expect(response.author).toBe('anhnm19')
             expect(response.optionOne.text).toBe('option one test')
             expect(response.optionTwo.text).toBe('option two test')
             expect(response.id).toBeDefined();
