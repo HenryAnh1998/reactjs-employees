@@ -6,7 +6,7 @@ export function getInitialData () {
         _getQuestions(),
     ]).then(([users, questions]) => ({
         users,
-        questions,
+        questions
     }))
 }
 
@@ -14,9 +14,9 @@ export function saveQuestion(optionOneText, optionTwoText, author) {
     return _saveQuestion({optionOneText, optionTwoText, author});
 }
 
-export function saveQuestionAnswer(authedUserId, qid, answer) {
+export function saveQuestionAnswer(authedEmployeeId, qid, answer) {
     return _saveQuestionAnswer({
-        authedUser: authedUserId,
+        authedEmployee: authedEmployeeId,
         qid,
         answer
     });

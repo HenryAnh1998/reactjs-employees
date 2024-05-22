@@ -1,19 +1,19 @@
-import {render} from "@testing-library/react";
-import {Provider} from "react-redux";
-import {store} from "../store";
-import {BrowserRouter} from "react-router-dom";
+import { render } from "@testing-library/react";
+import { Provider } from "react-redux";
+import { store } from "../../store";
+import { BrowserRouter } from "react-router-dom";
 import React from "react";
-import Nav from "./Nav";
-import {setAuthedUser} from "../actions/authedUser";
+import Navigation from "./Navigation";
+import { loginAuthenticatedUser } from "../../actions/authedEmployee";
 
-describe("Nav", () => {
+describe("Navigation", () => {
     it("should render the component", () => {
-        store.dispatch(setAuthedUser({id: "sarahedo", password: ""}));
+        store.dispatch(loginAuthenticatedUser({ id: "sarahedo", password: "" }));
 
         const component = render(
             <Provider store={store}>
                 <BrowserRouter>
-                    <Nav/>
+                    <Navigation />
                 </BrowserRouter>
             </Provider>
         );
@@ -22,18 +22,18 @@ describe("Nav", () => {
     });
 
     it("should display username of logged in user", () => {
-        store.dispatch(setAuthedUser({id: "sarahedo", password: ""}));
+        store.dispatch(loginAuthenticatedUser({ id: "sarahedo", password: "" }));
 
         const component = render(
             <Provider store={store}>
                 <BrowserRouter>
-                    <Nav/>
+                    <Navigation />
                 </BrowserRouter>
             </Provider>
         );
 
         const userSpanElement = component.getByTestId("user-information");
-        expect(userSpanElement.textContent).toBe("User: sarahedo");
+        expect(userSpanElement.textContent).toBe("sarahedoLogout");
 
     });
 });

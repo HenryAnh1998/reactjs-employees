@@ -1,12 +1,8 @@
-import {configureStore} from '@reduxjs/toolkit';
-import authedUser from "./reducers/authedUser";
-import users from "./reducers/users";
+import { configureStore } from '@reduxjs/toolkit';
+import authedEmployee from "./reducers/authedEmployee";
+import users from "./reducers/employee";
 import questions from "./reducers/questions";
 
 export const store = configureStore({
-  reducer: {
-    authedUser,
-    users,
-    questions,
-  },
+    reducer: { authedEmployee, users, questions },
 });

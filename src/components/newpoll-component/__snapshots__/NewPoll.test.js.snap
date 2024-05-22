@@ -1,0 +1,232 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewPoll should render the component 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="container"
+      >
+        <div
+          class="row"
+        >
+          <h1
+            class="text-center"
+          >
+            Would You Rather
+          </h1>
+        </div>
+        <div
+          class="row"
+        >
+          <h3
+            class="font-weight-light text-center"
+          >
+            Create Your Own Poll
+          </h3>
+        </div>
+        <div
+          class="row"
+        >
+          <form>
+            <div
+              style="display: flex;"
+            >
+              <div
+                class="form-group p-2 col-6"
+              >
+                <label
+                  data-testid="firstOptionLabel"
+                  for="firstOption"
+                >
+                  First Option
+                </label>
+                <input
+                  class="form-control"
+                  data-testid="firstOption"
+                  id="firstOption"
+                  name="firstOption"
+                  placeholder="Option One"
+                  required=""
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="form-group p-2 col-6"
+              >
+                <label
+                  data-testid="secondOptionLabel"
+                  for="secondOption"
+                >
+                  Second Option
+                </label>
+                <input
+                  class="form-control"
+                  data-testid="secondOption"
+                  id="secondOption"
+                  name="secondOption"
+                  placeholder="Option Two"
+                  required=""
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="text-center p-2"
+            >
+              <br />
+              <button
+                class="btn btn-primary"
+                data-testid="submit-poll"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <h1
+          class="text-center"
+        >
+          Would You Rather
+        </h1>
+      </div>
+      <div
+        class="row"
+      >
+        <h3
+          class="font-weight-light text-center"
+        >
+          Create Your Own Poll
+        </h3>
+      </div>
+      <div
+        class="row"
+      >
+        <form>
+          <div
+            style="display: flex;"
+          >
+            <div
+              class="form-group p-2 col-6"
+            >
+              <label
+                data-testid="firstOptionLabel"
+                for="firstOption"
+              >
+                First Option
+              </label>
+              <input
+                class="form-control"
+                data-testid="firstOption"
+                id="firstOption"
+                name="firstOption"
+                placeholder="Option One"
+                required=""
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="form-group p-2 col-6"
+            >
+              <label
+                data-testid="secondOptionLabel"
+                for="secondOption"
+              >
+                Second Option
+              </label>
+              <input
+                class="form-control"
+                data-testid="secondOption"
+                id="secondOption"
+                name="secondOption"
+                placeholder="Option Two"
+                required=""
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="text-center p-2"
+          >
+            <br />
+            <button
+              class="btn btn-primary"
+              data-testid="submit-poll"
+              type="submit"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

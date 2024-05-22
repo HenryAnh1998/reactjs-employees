@@ -4,10 +4,10 @@ import App from './App';
 import {Provider} from "react-redux";
 import {store} from "./store";
 import {BrowserRouter} from "react-router-dom";
-import {setAuthedUser} from "./actions/authedUser";
+import {loginAuthenticatedUser} from "./actions/authedEmployee";
 
 describe("App", () => {
-    it("should render the component", () => {
+    it("Should render the components", () => {
         const component = render(
             <Provider store={store}>
                 <BrowserRouter>
@@ -19,7 +19,7 @@ describe("App", () => {
         expect(component).toMatchSnapshot();
     });
 
-    it("should show Login page when not logged in", () => {
+    it("Should show Login page when not logged in", () => {
         const component = render(
             <Provider store={store}>
                 <BrowserRouter>
@@ -31,8 +31,8 @@ describe("App", () => {
         expect(heading).toBeInTheDocument();
     });
 
-    it("should show Dashboard page when logged in", () => {
-        store.dispatch(setAuthedUser({id: "", password: ""}));
+    it("Should show Dashboard page after logged in", () => {
+        store.dispatch(loginAuthenticatedUser({id: "", password: ""}));
 
         const component = render(
             <Provider store={store}>
@@ -42,7 +42,7 @@ describe("App", () => {
             </Provider>
         );
 
-        const heading = component.getByTestId("heading");
+        const heading = component.getByTestId("dashboard");
         expect(heading).toBeInTheDocument();
     });
 });

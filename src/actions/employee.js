@@ -1,8 +1,8 @@
 export const RECEIVE_USERS = "RECEIVE_USERS";
 export const ADD_ANSWER_USER = "ADD_ANSWER_USER";
-export const ADD_QUESTION_USER = "ADD_QUESTION_USER";
+export const ADD_ASKING_USER = "ADD_ASKING_USER";
 
-export function receiveUsers(users) {
+export function getEmployees(users) {
     return {
         type: RECEIVE_USERS,
         users
@@ -18,9 +18,9 @@ export function addAnswerUser(authedEmployee, qid, answer) {
     };
 }
 
-export function addQuestionUser({ author, id }) {
+export function addAskingUser({ author, id }) {
     return {
-        type: ADD_QUESTION_USER,
+        type: ADD_ASKING_USER,
         author,
         qid: id
     };
