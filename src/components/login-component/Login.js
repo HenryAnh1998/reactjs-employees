@@ -6,8 +6,8 @@ import "./login.css";
 
 
 const Login = ({ dispatch, loggedIn }) => {
-    const [username, setUsername] = useState("tylermcginnis");
-    const [password, setPassword] = useState("abc321");
+    const [username, setUsername] = useState("anhnm19");
+    const [password, setPassword] = useState("anhnm19pw");
 
     if (loggedIn) {
         const urlParams = new URLSearchParams(window.location.search);
